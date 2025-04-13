@@ -30,17 +30,14 @@ setopt PROMPT_SUBST ; PS1='%F{white}---%f
 %K{white}%F{black}%n@%m%f%k%F{white}:%f %F{6}%~%f %F{red}$(__git_ps1 "(%s)")%f
 \$ '
 
-# git ignore file をいい感じに取ってきてくれるAPI
-function gi() { curl -sLw "\n" https://www.toptal.com/developers/gitignore/api/
-
 ## 天気
 alias tenki="curl -s http://wttr.in/shinjuku\?n4"
 alias tenki2="curl -s http://v2.wttr.in/shinjuku"
 
 # taskfile
-# eval "$(task --completion zsh)"export PATH="$HOME/.pyenv/bin:$PATH"
+eval "$(task --completion zsh)"
 
 # pyenv の設定
+export PATH="$HOME/.pyenv/bin:$PATH"
 eval "$(pyenv init --path)"
 eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
