@@ -21,6 +21,7 @@ brew install pyenv
 echo 'export PATH="$HOME/.pyenv/bin:$PATH"' >> ~/.zshrc
 echo 'eval "$(pyenv init --path)"' >> ~/.zshrc
 echo 'eval "$(pyenv init -)"' >> ~/.zshrc
-echo 'eval "$(pyenv virtualenv-init -)"' >> ~/.zshrc
-# pyenv のインストール確認
-pyenv --version
+
+
+# task のインストール
+brew install go-task
