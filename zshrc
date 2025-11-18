@@ -11,6 +11,8 @@ alias ll='ls -lGF'
 alias ls='ls -GF'
 alias al='ls -alGF'
 alias hw='echo Hello world'
+# Flutter は常に FVM 管理下のものを利用する
+alias flutter='fvm flutter'
 
 # git-promptの読み込み
 source ~/.zsh/git-prompt.sh
@@ -37,7 +39,7 @@ alias tenki2="curl -s http://v2.wttr.in/shinjuku"
 # taskfile
 eval "$(task --completion zsh)"
 
-# pyenv の設定
-export PATH="$HOME/.pyenv/bin:$PATH"
-eval "$(pyenv init --path)"
-eval "$(pyenv init -)"
+# uv の設定 (補完)
+if command -v uv >/dev/null 2>&1; then
+  eval "$(uv generate-shell-completion zsh)"
+fi
