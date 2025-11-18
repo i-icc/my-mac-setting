@@ -11,6 +11,8 @@ alias ll='ls -lGF'
 alias ls='ls -GF'
 alias al='ls -alGF'
 alias hw='echo Hello world'
+# Flutter は常に FVM 管理下のものを利用する
+alias flutter='fvm flutter'
 
 # git-promptの読み込み
 source ~/.zsh/git-prompt.sh
