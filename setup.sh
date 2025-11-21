@@ -32,3 +32,6 @@ brew install --cask xcode
 brew install --cask deepl
 brew install --cask orbstack
 brew install fvm
+brew install --cask google-chrome
+brew install --cask wireguard
+brew install ffmpeg
